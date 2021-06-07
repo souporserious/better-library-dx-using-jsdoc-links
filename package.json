@@ -1,0 +1,13 @@
+{
+  "name": "better-dx-using-rich-inline-documentation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src/index.js --out-dir lib"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3"
+  }
+}
