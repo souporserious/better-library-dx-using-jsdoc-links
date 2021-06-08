@@ -14,7 +14,7 @@ module.exports = function () {
             .slice(0, endIndex)
             .concat([
               `* `,
-              `* [Edit on GitHub](${repository.url}${filePath})`,
+              `* [Edit on GitHub](${repository.url}/blob/main${filePath})`,
               `* `,
             ])
             .concat(lines.slice(endIndex, lines.length))
