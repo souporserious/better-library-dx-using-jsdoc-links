@@ -1,6 +1,4 @@
-const createComment = (value) => ` * ${value}`
-
-const REPO_BASE = `https://github.com/souporserious/better-dx-using-rich-inline-documentation/tree/main/src`
+const { repository } = require('./package.json')
 
 module.exports = function () {
   return {
@@ -14,7 +12,11 @@ module.exports = function () {
           const endIndex = lines.findIndex((line) => line.startsWith(' * @'))
           leadingComment.value = lines
             .slice(0, endIndex)
-            .concat([`* `, `* [Edit on GitHub](${REPO_BASE}${filePath})`, `* `])
+            .concat([
+              `* `,
+              `* [Edit on GitHub](${repository.url}${filePath})`,
+              `* `,
+            ])
             .concat(lines.slice(endIndex, lines.length))
             .join('\n')
         }

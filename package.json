@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/souporserious/better-dx-using-rich-inline-documentation"
+  },
   "scripts": {
     "build": "babel src/index.js --out-dir lib"
   },
