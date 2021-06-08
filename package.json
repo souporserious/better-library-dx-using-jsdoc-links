@@ -1,11 +1,11 @@
 {
-  "name": "better-dx-using-rich-inline-documentation",
+  "name": "better-library-dx-using-jsdoc-links",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/souporserious/better-dx-using-rich-inline-documentation"
+    "url": "https://github.com/souporserious/better-library-dx-using-jsdoc-links"
   },
   "scripts": {
     "build": "babel src/index.js --out-dir lib"
